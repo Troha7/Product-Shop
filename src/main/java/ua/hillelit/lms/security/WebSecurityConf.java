@@ -59,7 +59,7 @@ public class WebSecurityConf {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests((requests) -> requests
-                        .requestMatchers("/css/**", "/img/**", "/home").permitAll()
+                        .requestMatchers("/css/**", "/img/**", "/home", "/ping", "/about").permitAll()
                         .requestMatchers("/login").anonymous()
                         .requestMatchers("/products/**").hasAuthority("ADMIN")
                         .anyRequest().authenticated()
