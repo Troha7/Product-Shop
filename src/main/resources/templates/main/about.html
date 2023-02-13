@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <title th:text="#{app.about.msg}">Web App</title>
+  <link rel="stylesheet" th:href="@{/css/main.css}"/>
+  <link rel="stylesheet" th:href="@{/css/header.css}"/>
+  <link rel="stylesheet" th:href="@{/css/footer.css}"/>
+  <link rel="stylesheet" th:href="@{/css/sidebar.css}"/>
+</head>
+<body>
+<div class="container">
+
+  <header th:insert="fragments/header :: header"></header>
+
+  <main>
+    <h1> About project </h1>
+    <p class="text">
+      This is a simple web application built using Spring Web, Spring Security, Thymeleaf and Postgres database.
+    </p>
+  </main>
+
+  <sidebar th:insert="fragments/sidebar :: sidebar"></sidebar>
+
+  <footer th:insert="fragments/footer :: footer (${year})"></footer>
+
+</div>
+</body>
+</html>

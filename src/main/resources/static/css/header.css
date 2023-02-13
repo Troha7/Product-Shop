@@ -1,0 +1,28 @@
+header {
+    grid-area: header;
+    background: #5382a1;
+}
+.container-header {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+.container-header img {
+    padding: 5px 0 0 20px;
+}
+
+
+.header-text {
+    text-align: center;
+    color: black;
+}
+
+
+
+.login-form {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+
+
+}

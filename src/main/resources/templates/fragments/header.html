@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<body>
+<header th:fragment="header">
+    <div class="container-header">
+        <img th:src="@{/img/products_icon.png}" width="20%" height="20%"/>
+        <h1 class="header-text"> Product Store </h1>
+<div class="login-form">
+        <p class="login-text" th:inline="text">Hello <span th:remove="tag" sec:authentication="name">thymeleaf</span>!</p>
+        <form class="header-form" th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+</div>
+    </div>
+</header>
+</body>
+</html>

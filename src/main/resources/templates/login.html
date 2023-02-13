@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title th:text="#{app.login.msg}">Web App</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/header.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/footer.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/sidebar.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/error.css}"/>
+</head>
+<body>
+<div class="container">
+
+    <header th:insert="fragments/header :: header"></header>
+
+    <main>
+        <div class="wrapper-main">
+
+        <h2 th:text="#{app.login.msg}">text</h2th:text></h2>
+
+        <div th:if="${param.error}">
+            <p class="err">Invalid username and password.</p>
+        </div>
+        <div th:if="${param.logout}">
+            <p class="err">You have been logged out.</p>
+        </div>
+        <form th:action="@{/login}" method="post">
+            <div><label> User Name : <input type="text" name="username"/> </label></div>
+            <div><label> Password: <input type="password" name="password"/> </label></div>
+            <div><input type="submit" value="Sign In"/></div>
+        </form>
+            </div>
+    </main>
+
+    <sidebar th:insert="fragments/sidebar :: sidebar"></sidebar>
+
+    <footer th:insert="fragments/footer :: footer (${year})"></footer>
+
+</div>
+</body>
+</html>

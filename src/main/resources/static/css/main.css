@@ -1,0 +1,68 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header header"
+                         "sidebar main"
+                         "footer footer";
+    grid-gap: 5px;
+    grid-template-columns: 200px 6fr;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+
+
+main {
+    grid-area: main;
+    background: black;
+}
+.wrapper-main {
+    padding: 20px 0 20px 40px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    text-align: left;
+    color: white;
+    text-align: center;
+}
+h2{
+    color: white;
+    text-align: left;
+    font-size: xx-large;
+}
+.info{
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    border: 1px solid white;
+
+}
+th, td {
+    border: 1px solid white;
+
+}
+
+
+
+.text{
+    color: #e76f00;
+    text-align: center;
+    font-size: large;
+}
+
+.add-product-btn{
+    width: 120px;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+form{
+    color: white;
+    font-size: large;
+}
+
