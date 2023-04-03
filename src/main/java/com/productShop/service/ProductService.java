@@ -1,13 +1,13 @@
-package ua.hillelit.lms.service;
+package com.productShop.service;
 
+import com.productShop.model.Product;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import ua.hillelit.lms.dto.ProductDto;
-import ua.hillelit.lms.model.Product;
-import ua.hillelit.lms.repository.ProductRepository;
+import com.productShop.dto.ProductDto;
+import com.productShop.repository.ProductRepository;
 
 import java.util.List;
 

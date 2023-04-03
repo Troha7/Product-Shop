@@ -1,9 +1,9 @@
-package ua.hillelit.lms.dto;
+package com.productShop.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ua.hillelit.lms.model.UserRole;
+import com.productShop.model.UserRole;
 
 /**
  * {@link UserInfoDto}

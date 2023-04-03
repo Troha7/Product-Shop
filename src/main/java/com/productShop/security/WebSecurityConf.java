@@ -1,4 +1,4 @@
-package ua.hillelit.lms.security;
+package com.productShop.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

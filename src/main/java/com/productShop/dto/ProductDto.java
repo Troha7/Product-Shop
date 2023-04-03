@@ -1,4 +1,4 @@
-package ua.hillelit.lms.dto;
+package com.productShop.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

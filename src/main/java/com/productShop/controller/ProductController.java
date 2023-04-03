@@ -1,12 +1,12 @@
-package ua.hillelit.lms.controller;
+package com.productShop.controller;
 
+import com.productShop.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ua.hillelit.lms.dto.ProductDto;
-import ua.hillelit.lms.service.ProductService;
+import com.productShop.dto.ProductDto;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

@@ -1,10 +1,10 @@
-package ua.hillelit.lms;
+package com.productShop.lms;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MyStoreAppTests {
+class ProductShopAppTests {
 
     @Test
     void contextLoads() {

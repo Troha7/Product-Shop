@@ -1,4 +1,4 @@
-package ua.hillelit.lms.model;
+package com.productShop.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -6,16 +6,16 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * {@link Product}
+ * {@link UserInfo}
  *
- * @author Dmytro Trotsenko on 1/31/23
+ * @author Dmytro Trotsenko on 2/10/23
  */
 @NoArgsConstructor
-@Setter
 @Getter
+@Setter
 @Entity
-@Table(schema = "my_store")
-public class Product {
+@Table(schema = "my_store", name = "user")
+public class UserInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,6 +25,8 @@ public class Product {
     private String name;
 
     @Column
-    private Double price;
+    private String password;
 
+    @Enumerated(EnumType.STRING)
+    private UserRole role;
 }

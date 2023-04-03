@@ -1,8 +1,8 @@
-package ua.hillelit.lms.repository;
+package com.productShop.repository;
 
+import com.productShop.model.Product;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import ua.hillelit.lms.model.Product;
 
 /**
  * {@link ProductRepository}

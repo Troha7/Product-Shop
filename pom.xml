@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ua.hillelit.lms</groupId>
-    <artifactId>javaProLess43</artifactId>
+    <artifactId>product-shop</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>javaProLess43</name>
     <description>javaProLess43</description>

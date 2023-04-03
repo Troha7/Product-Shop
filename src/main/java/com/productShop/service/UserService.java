@@ -1,13 +1,13 @@
-package ua.hillelit.lms.service;
+package com.productShop.service;
 
+import com.productShop.model.UserInfo;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import ua.hillelit.lms.dto.UserInfoDto;
-import ua.hillelit.lms.model.UserInfo;
-import ua.hillelit.lms.repository.UserRepository;
+import com.productShop.dto.UserInfoDto;
+import com.productShop.repository.UserRepository;
 
 /**
  * {@link UserService}

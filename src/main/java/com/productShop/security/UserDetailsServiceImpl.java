@@ -1,5 +1,7 @@
-package ua.hillelit.lms.security;
+package com.productShop.security;
 
+import com.productShop.model.UserInfo;
+import com.productShop.repository.UserRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -10,8 +12,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import ua.hillelit.lms.model.UserInfo;
-import ua.hillelit.lms.repository.UserRepository;
 
 import java.util.HashSet;
 import java.util.Set;

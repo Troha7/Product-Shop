@@ -1,4 +1,4 @@
-package ua.hillelit.lms.model;
+package com.productShop.model;
 
 /**
  * {@link UserRole}
